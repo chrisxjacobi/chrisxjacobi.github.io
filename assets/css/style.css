@@ -37,13 +37,17 @@ body {
 
 .navlinks {
 	color: white;
-	margin-left: 18%;
+	margin-left: 17%;
 }
 
 .page-footer {
 	font-family: advent-pro, sans-serif;
 	background-color: #189bc1 !important;
 	color: white;
+}
+
+.footer-copyright {
+	text-align: center;
 }
 
 .card-panel {
@@ -85,4 +89,5 @@ nav ul a {
 .side-nav {
 	color: black;
 	text-align: center;
+	font-size: 18px;
 }
