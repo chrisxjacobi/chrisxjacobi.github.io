@@ -1,0 +1,69 @@
+body {
+	color: #189bc1;
+}
+
+.glyphicon, .material-icons {
+	color: black;
+	font-size: 2rem;
+}
+
+.projects {
+	color: #189bc1;
+}
+
+.intro, .introTwo {
+	font-family: advent-pro, sans-serif;
+	color: #189bc1;
+}
+
+.jumbotron {
+	font-family: advent-pro, sans-serif;
+    background-color: white; 
+    color: #189bc1;
+}
+
+.hoverable {
+	font-size: 1rem;
+	text-align: center;
+	background-color: white;
+	color: #189bc1;
+}
+
+.nav-wrapper {
+	font-family: advent-pro, sans-serif;
+	background-color: #189bc1;
+	color: white;
+}
+
+.navlinks {
+	color: white;
+}
+
+.page-footer {
+	font-family: advent-pro, sans-serif;
+	background-color: #189bc1 !important;
+	color: white;
+}
+
+.card-panel {
+	color: #189bc1;
+	text-align: center;
+}
+
+.fa-4x {
+	color: white !important;
+}
+
+.links{
+	color: white;
+}
+
+#chrissticker {
+	float: right;
+	height: 40px;
+	width: 40px;
+}
+
+#menuButton {
+	color: white;
+}
