@@ -66,7 +66,7 @@ body {
 #chrissticker {
 	height: 80px;
 	width: 80px;
-	margin-bottom: 15px;
+	margin-bottom: 18px;
 }
 
 #menuButton {
@@ -81,14 +81,8 @@ nav ul a {
 	height: 40px;
 	width: 40px;
 	margin: auto;
+}
+.side-nav {
 	color: black;
 	text-align: center;
 }
-
-/*#facebookButton {
-	margin-left: 2px;
-}
-
-#twitterButton {
-	margin-left: 10px;
-}*/
