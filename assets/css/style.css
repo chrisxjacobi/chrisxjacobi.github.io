@@ -91,3 +91,7 @@ nav ul a {
 	text-align: center;
 	font-size: 18px;
 }
+
+#particles-js {
+	z-index: 1;
+}
