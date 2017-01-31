@@ -15,6 +15,7 @@ body {
 	font-family: advent-pro, sans-serif;
 	color: #189bc1;
 	max-height: 400px;
+	text-align: center;
 }
 
 .jumbotron {
