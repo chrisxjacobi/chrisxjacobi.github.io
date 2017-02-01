@@ -2,7 +2,6 @@ body {
 	color: #189bc1;
 }
 
-
 .glyphicon, .material-icons {
 	color: black;
 	font-size: 2rem;
@@ -16,7 +15,6 @@ body {
 	font-family: advent-pro, sans-serif;
 	color: #189bc1;
 	text-align: center;
-	max-height: 420px;
 }
 
 .jumbotron {
@@ -96,12 +94,7 @@ nav ul a {
 }
 
 #particles-js {
-	z-index: 1;
-	max-height: 420px;
-}
-
-canvas {
-	position: relative;
-	top: -300px;  
-	/*use -200px*/
+	font-family: advent-pro, sans-serif;
+	color: #189bc1;
+	text-align: center;
 }
