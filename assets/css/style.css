@@ -75,8 +75,8 @@ body {
 }
 
 #chrispic {
-	height: 20%;
-	width: 20%;
+	height: 27%;
+	width: 27%;
 }
 
 #menuButton {
@@ -98,8 +98,14 @@ nav ul a {
 	font-size: 18px;
 }
 
-#particles-js {
+#about {
 	font-family: advent-pro, sans-serif;
 	color: #189bc1;
 	text-align: center;
+}
+
+.attributes {
+	font-family: advent-pro, sans-serif;
+	background-color: #189bc1 !important;
+	color: white;
 }
