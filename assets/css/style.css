@@ -7,6 +7,10 @@ body {
 	font-size: 2rem;
 }
 
+#contact {
+	float: right;
+}
+
 .projects {
 	color: #189bc1;
 }
@@ -36,7 +40,7 @@ body {
 	color: white;
 }
 
-.navlinks {
+.navlinks, #contact {
 	color: white;
 	margin-left: 17%;
 }
@@ -85,6 +89,10 @@ body {
 
 nav ul a {
 	text-align: center;
+}
+
+.nav-wrapper a:hover {
+	color: white;
 }
 
 .socialButtons {
