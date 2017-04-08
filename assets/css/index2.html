@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>Hangman-Game</title>
+</head>
+
+<body onload="startUp()">
+	 
+
+
+
+
+
+
+	<div class="row">
+		<div class="col-sm-12">
+		<h1>Hangman!!</h1>
+		</div>
+	</div>
+
+<input id="letter" type="text">
+<input type="button" value="letter" onclick="Letter()"/>
+<p id="answer"></p>
+<p id="counter"></p>
+<p id="stat"></p>
+	
+	
+<script type="text/javascript">
+
+	//pick a randon word//
+		var randomWordArr = ["javascript", "html", "code", "function", "array", "div"];
+	
+	//Pick a random word
+		var randomWord = randomWordArr[Math.floor(Math.random() * randomWordArr.length)];
+	
+	// Set up anser array
+		 var s;
+		 var count = 0;
+		 var answerArray = [];
+			 
+		 function startUp() 
+		 {
+			 for (var i = 0; i < randomWord.length; i++) 
+			 {
+				answerArray[i] = "_";
+			}
+
+			s = answerArray.join(" ");
+			document.getElementById("answer") .innerHTML = s;
+		}	
+
+		function Letter() 
+		{
+			var letter = document.getElementById("letter") .value;
+			if (letter.length > 0)
+			{
+				for (var i = 0; i < randomWord.length; i++)
+				{
+					if (randomWord[i] === letter)
+					{
+						answerArray[i] = letter;
+					}
+				}
+				count++;
+				document.getElementById("counter") .innerHTML = "No of clicks: " + count;
+				document.getElementById("answer") .innerHTML = answerArray.join(" ");
+			}
+			if(couunt>5)
+			{
+				document.getElementById("stat") .innerHTML = "Come on - you should have guessed it by now";			
+			}
+		}	
+			
+	// The game loop
+		//for( i = 0; i <= word.length; i++) {
+
+		//while (remainingLetters > 0) {
+	// show the player their progress
+					
+			
+		//var guess = prompt ("Guess a letter or click cancel to stop playing.");
+			// if (guess === null) {
+			//	 break; 
+			// }
+		//	  else if (guess.length !== 1) {
+			//	 alert("Please enter a single letter.");
+			// } else {
+				//for ( var j = 0; j < word.length; j++)	
+					//if (word[j] === guess) {
+					//	answerArray[j] = guess;
+						//remainingLetters==;
+				//	}
+				//}
+			
+		
+		// }
+		// el.innerHTML = answerArray.join(" ");
+		// alert("Great Job! The answer was " + word);
+
+</script>			
+	
+</body>
+</html>
