@@ -100,7 +100,7 @@ nav {
 }
 
 .fa-github a:link,
-.fa-github a:visited, {
+.fa-github a:visited {
     transition: color 0.5s;
 }
 
@@ -300,7 +300,7 @@ section.section-contact {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-    background-color: #5f5f5f;
+    background-color: #fff;
     border-bottom: 1px solid #7b8b2f;
     transition: color 0.2s
 }
