@@ -1,0 +1,33 @@
+typeface = quicksand, backup raleway
+
+wireframe = focus on links/usability
+ ==> pen & paper (gridbooks)
+ ==> omnigraffle
+ ==> pencil project, mockflow, wireframe.cc, lucidchart
+ 
+ polygon drawing : https://www.math10.com/en/geometry/geogebra/geogebra.html
+ 
+
+
+
+key images for projects divs
+
+wrestling ring: https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/b/b7/Wrestling_Ring.jpg/revision/latest?cb=20161120085415
+
+abbath: https://ih0.redbubble.net/image.188763515.8827/flat,900x900,070,f.u2.jpg
+
+cult of luna: https://i1.wp.com/farm4.static.flickr.com/3279/2762667777_43a4c17014.jpg
+
+nyan cat: https://upload.wikimedia.org/wikipedia/en/e/ed/Nyan_cat_250px_frame.PNG
+
+paint brush: http://www.parc-montozarbres.com
+
+terminal: https://i.ytimg.com/vi/u6_E2ggMchs/maxresdefault.jpg
+ 
+ 
+ TO DO!!!!
+ 
+ 
+ -change font percentages when done with content
+ 
+ 

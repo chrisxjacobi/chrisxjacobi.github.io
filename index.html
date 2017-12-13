@@ -1,171 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
-    <title>Chris Jacobi | Developer</title>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/hover.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="particles-css/styleparticles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    <script src="http://use.edgefonts.net/advent-pro:n1,n2,n3,n4,n5,n6,n7:all.js"></script>
-    <script src="particles.js"></script>
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
+
+    <title>Chris Jacobi | Web Developer</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/manifest.json">
+    <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+    <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <div id="contact">
-                <a href="mailto:chrisxjacobi@gmail.com">contact.</a>
-            </div>
-            <div class="brand-logo"></div>
-            <ul id="slide-out" class="side-nav">
-                <li>
-                    <div class="userView">
-                        <div class="background">
-                        </div>
-                        <img class="center-block" id="chrissticker" src="assets/images/chrissticker_greyscale.png">
-                    </div>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/chrisxjacobi/"><img class="socialButtons" id="facebookButton" src="assets/images/facebook.png"></a>
-                </li>
-                facebook
-                <li>
-                    <a href="https://www.instagram.com/chrisxjacobi/"><img class="socialButtons" id="instagramButton" src="assets/images/instagram.png"></a>
-                </li>
-                instagram
-                <li>
-                    <a href="https://twitter.com/chrisxjacobi"><img class="socialButtons" id="twitterButton" src="assets/images/twitter.png"></a>
-                </li>
-                twitter
-                <li>
-                    <a href="assets/images/cxjresume.pdf"><img class="socialButtons" id="resumeButton" src="assets/images/resume.png"></a>
-                </li>
-                resume
-            </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons" id="menuButton">menu</i></a>
-        </div>
-    </nav>
-    <div id="about">
-        <h2>I'm Chris Jacobi.</h2>
-        <img src="assets/images/chrispic.jpg" alt="" class="img-circle hoverable" id="chrispic">
-        <h4>{full-stack dude/}</h4>
-        <br>
-        <h5>I enjoy opportunities to map, mold, and make user-friendly apps.</h5>
-        <h5>Design gives me the opportunity to tell visual stories.</h5>
-        <h6 class="card-panel hoverable attributes"></h6>
-        <h5>I'm a collaborator, a creative, and a challenger.</h5>
-        <h5>I'm also a phδ-slurper, bibiliophile, and chihuahua lover.</h5>
-    </div>
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col s12">
-                    <div class="card-panel">
-                        <h4><span>projects</span></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="container projects">
-                <div class="row" id="parti">
-                    <div class="col-md-4 text-center">
-                        <div id="projectOne" class="card-panel hoverable">
-                            <a href="http://blasttrack.herokuapp.com" class="hvr-grow">
-                                <i class="medium material-icons" id="icon">queue_music</i>
-                            </a>
-                            <h5>blast.track</h5>
-                            <p>music & event search/last.fm API usage</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div id="projectTwo" class="card-panel hoverable">
-                            <a href="https://shrouded-depths-12783.herokuapp.com/helpr" class="hvr-grow">
-                                <i class="medium material-icons" id="icon">redeem</i>
-                            </a>
-                            <h5>helpr</h5>
-                            <p>volunteer search & contribution project</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div id="projectThree" class="card-panel hoverable">
-                            <a href="https://blackmetaltrivia.herokuapp.com" class="hvr-grow">
-                                <i class="medium material-icons" id="icon">av_timer</i>
-                            </a>
-                            <h5>black metal trivia</h5>
-                            <p>time-based jQuery trivia game</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <div id="projectFour" class="card-panel hoverable">
-                            <a href="http://giphytastic.herokuapp.com" class="hvr-grow">
-                                <i class="medium material-icons" id="icon">movie</i>
-                            </a>
-                            <h5>GifTastic</h5>
-                            <p>add/search for a gif using giphy API</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div id="projectFive" class="card-panel hoverable">
-                            <a href="https://github.com/chrisxjacobi/sputnikscraper" class="hvr-grow">
-                                <i class="medium material-icons" id="icon">web</i>
-                            </a>
-                            <h5>sputnikscraper</h5>
-                            <p>web scraping & article storage via mongoose</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div id="projectSix" class="card-panel hoverable">
-                            <a href="https://ninetieswrestlinghangman.herokuapp.com" class="hvr-grow">
-                                <i class="medium material-icons" id="icon">games</i>
-                            </a>
-                            <h5>90s wrestling hangman</h5>
-                            <p>a nostalgic and fun javascript hangman game</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <div id="particles-js" class="hide-on-small-only" >    
-    </div>
-    <footer class="page-footer contact">
-        <div class="container">
-            <div class="navlinks">
-                <div class="row">
-                    <div class="col s4">
-                        <a href="mailto:chrisxjacobi@gmail.com"><i class="fa fa-envelope-open fa-4x"></i></a>
-                        </i>
-                    </div>
-                    <div class="col s4">
-                        <a href="https://github.com/chrisxjacobi/" class="links">
-                            <i class="fa fa-github fa-4x"></i></a>
-                    </div>
-                    <div class="col s4">
-                        <a href="https://linkedin.com/in/chrisxjacobi/" class="links">
-                            <i class="fa fa-linkedin-square fa-4x"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2016-2017 &nbsp; Chris Jacobi
-            </div>
-        </div>
-    </footer>
-    <script src="particles.js"></script>
-    <script src="particles-js/app.js"></script>
-    <script type="text/javascript" src="assets/javascript/index.js"></script>
-</body>
 
-</html>
+    <!--navigation-->
+    <nav class="nav">
+        <ul class="main-nav">
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="contact.html#contact">contact</a></li>
+        </ul>
+        <ul class="social-links">
+            <li><a href="https://github.com/chrisxjacobi"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/chrisxjacobi/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="contact.html"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+
+    <!--header/intro container-->
+    <div class="container header">
+        <h2 id="name">Chris Jacobi</h2>
+
+        <div class="jumbotron">
+            <p id="dev">Front-end web developer in Austin, TX</p>
+            <p id="after">Available for full-time and freelance opportunities</p>
+        </div>
+    </div>
+
+
+    <!--section projects-->
+    <section class="section-projects" id="projects">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="resources/css/img/blast-track.jpeg" class="image" alt="blast.track">
+                    <div class="overlay">
+                        <a href="http://blasttrack.herokuapp.com/">
+                            <div class="text">
+                                <h3>blast.track</h3>
+                                music &amp; event search/last.fm API usage</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="resources/css/img/helpr.jpg" class="image" alt="helpr">
+                    <div class="overlay">
+                        <a href="https://shrouded-depths-12783.herokuapp.com/helpr">
+                            <div class="text">
+                                <h3>helpr</h3>
+                                volunteer search &amp; contribution project</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="resources/css/img/giftastic.jpeg" class="image" alt="giftastic">
+                    <div class="overlay">
+                        <a href="http://giphytastic.herokuapp.com">
+                            <div class="text">
+                                <h3>giftastic</h3>
+                                add/search for a gif using giphy API</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="resources/css/img/black-metal-trivia.jpeg" class="image" alt="black metal trivia">
+                    <div class="overlay">
+                        <a href="https://blackmetaltrivia.herokuapp.com/">
+                            <div class="text">
+                                <h3>black metal trivia</h3>
+                                a time-based jQuery trivia game
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="resources/css/img/sputnikscraper.jpg" class="image" alt="Nature">
+                    <div class="overlay">
+                        <a href="https://github.com/chrisxjacobi/sputnikscraper">
+                            <div class="text">
+                                <h3>sputnikscraper</h3>
+                                node web scraping &amp; article storage via mongoose</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="resources/css/img/90s-wrestling-hangman.jpg" class="image" alt="90s wrestling hangman">
+                    <div class="overlay">
+                        <a href="https://ninetieswrestlinghangman.herokuapp.com/">
+                            <div class="text">
+                                <h3>90s wrestling hangman</h3>
+                                a nostalgic and fun javascript hangman game</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--section-about-->
+    <section class="section-about" id="about">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Hi, I'm Chris.</h2>
+                <p class="about-text">I enjoy opportunities to map, mold, and make user-friendly apps. <br>Design gives me the opportunity to tell visual stories. <br>I'm a collaborator, a creative, and a challenger.<br> I'm also a pho-slurper, bibiliophile, and chihuahua lover.
+                    <p>
+            </div>
+            <div class="col-md-4">
+                <img src="contents/chrispic.jpg" class="image">
+            </div>
+        </div>
+    </section>
+
+
+    <!--footer-->
+    <div class="footer navbar-fixed-bottom">
+        <ul>
+            <li><a href="https://github.com/chrisxjacobi"><i class="fa fa-github-alt " aria-hidden="true "></i></a></li>
+            <li><a href="https://www.linkedin.com/in/chrisxjacobi/"><i class="fa fa-linkedin " aria-hidden="true "></i></a></li>
+            <li><a href="contact.html"><i class="fa fa-envelope-open-o " aria-hidden="true "></i></a></li>
+        </ul>
+        <p>&copy; 2016 chris jacobi</p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/app.js"></script>
+
+</body>

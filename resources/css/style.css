@@ -1,0 +1,364 @@
+/*fun color: #189bc1, rgb(24,155,193)*/
+/*text-color: #5f5f5f*/
+
+
+/*--------------------*/
+
+/*---DEFAULT STYLES---*/
+
+/*--------------------*/
+
+
+/*css rules are ordered by how they appear on page (top to bottom)*/
+
+* {
+    box-sizing: border-box;
+    font-weight: 300;
+    color: #5f5f5f;
+}
+
+html {
+    background-color: #fff;
+    min-height: 100%;
+    color: #5f5f5f;
+    font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*---navbar---*/
+
+nav {
+    list-style: none;
+    margin-top: 40px;
+    font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
+    padding-bottom: 1px;
+}
+
+.main-nav {
+    float: left;
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main-nav .fa-arrow-left {
+    color: #189bc1;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 5px 0;
+    color: #189bc1;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #5f5f5f;
+}
+
+.social-links {
+    float: right;
+    list-style: none;
+    display: flex;
+    font-size: 160%;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-right: 35px;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    color: #5f5f5f;
+    transition: color 0.5s;
+}
+
+.fa-github a:link,
+.fa-github a:visited, {
+    transition: color 0.5s;
+}
+
+.fa-github-alt:hover,
+.fa-linkedin:hover,
+.fa-envelope-open-o:hover {
+    color: #189bc1;
+    transition: color 0.2s;
+}
+
+
+/*header jumbotron*/
+
+#name {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 48px;
+    color: #5f5f5f;
+    text-align: center;
+    font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    background-color: transparent !important;
+    margin-top: -50px;
+    ;
+    text-align: center;
+    font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+#dev:after {
+    display: block;
+    height: 4px;
+    background-color: #189bc1;
+    content: " ";
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*section projects*/
+
+.section-projects {
+    font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
+    text-align: center;
+    margin: 0 5% 5% 5%;
+    margin-bottom: 7%;
+}
+
+.section-projects .thumbnail {
+    border: 0 none;
+    box-shadow: none;
+}
+
+
+/*images and hover effect*/
+
+.thumbnail {
+    position: relative;
+    width: 100%;
+}
+
+.thumbnail img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #189bc1
+}
+
+.overlay h3 {
+    color: white;
+    font-weight: 300;
+}
+
+.thumbnail:hover .overlay {
+    opacity: 1;
+    background-color: rgba(121, 121, 121, 0.95);
+    text-decoration: none;
+}
+
+.thumbnail:hover .overlay a {
+    opacity: 1;
+    background-color: rgba(121, 121, 121, 0.95);
+    text-decoration: none;
+}
+
+.text {
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/*section about*/
+
+section.section-about {
+    font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 5% 5% 5%;
+    padding-bottom: 5%;
+}
+
+.section-about h2 {
+    font-weight: 400;
+}
+
+section.section-about img {
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    ;
+    position: relative;
+    margin: 0 auto;
+}
+
+.section-about p {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/*section contact*/
+
+section.section-contact {
+    font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 13%;
+    color: #5f5f5f;
+    border: none;
+}
+
+#name-contact,
+#email,
+#message {
+    font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+.text-center {
+    font-size: 15px;
+    border: none;
+}
+
+.form-group label {
+    float: left
+}
+
+.container .well {
+    background-color: #fff;
+    border: none;
+}
+
+.btn {
+    display: block;
+    /* change this from inline-block */
+    width: 20%;
+    /* setting the width */
+    margin: 0 auto;
+    /* this will center  it */
+    position: relative;
+    font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #189bc1;
+    border: 1px solid black;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #5f5f5f;
+    border-bottom: 1px solid #7b8b2f;
+    transition: color 0.2s
+}
+
+.form-messages {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.success {
+    background-color: rgba(38, 191, 68, 0.80);
+}
+
+.error {
+    background-color: rgba(209, 46, 46, 0.8);
+}
+
+
+/*footer*/
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    padding-top: 20px;
+    list-style: none;
+    padding-top: 20px;
+    /*
+   -webkit-box-shadow: 0px -1px 1px #189bc1;
+    -moz-box-shadow:    0px -1px 1px #189bc1;
+    box-shadow:         0px -1px 1px #189bc1;
+*/
+}
+
+.footer ul {
+    color: #fff;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    text-align: center;
+    padding-right: 40px;
+    font-size: 160%;
+}
+
+.footer p {
+    font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
+    color: #189bc1;
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+}
