@@ -93,7 +93,7 @@
         padding-bottom: 12%;
     }
     .main-nav li {
-        display: inline;
+        display: inline-block;
         text-align: center;
     }
     #name {
