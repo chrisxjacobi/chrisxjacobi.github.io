@@ -260,9 +260,12 @@ section.section-contact {
     font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 13%;
     color: #5f5f5f;
     border: none;
+}
+
+#contact {
+    padding-bottom: 5%;
 }
 
 #email,
