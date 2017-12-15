@@ -295,6 +295,7 @@ input[type="text"] {
 .container .well {
     background-color: #fff;
     border: none;
+    padding-bottom: 5%;
 }
 
 .btn {
@@ -316,7 +317,8 @@ input[type="text"] {
     border-radius: 2px;
     background-color: #fff;
     border-bottom: 1px solid #7b8b2f;
-    transition: color 0.2s
+    transition: color 0.2s;
+    
 }
 
 
