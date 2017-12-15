@@ -158,6 +158,9 @@
     section.section-about img {
         display: none;
     }
+    section.section-contact {
+        padding-bottom: 2%;
+    }
     
     .footer p {
         display: none;
