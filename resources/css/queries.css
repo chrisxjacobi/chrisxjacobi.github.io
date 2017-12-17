@@ -1,8 +1,11 @@
 /*https://script.google.com/macros/s/AKfycbwgpcDmj_rzmT5x0EHepCoWotS8E36o8ffL5h7-hOz3ph1Ff7Hz/exec*/
 
+
 /*--------------------*/
 
+
 /*---MEDIA SCREENS----*/
+
 
 /*--------------------*/
 
@@ -82,7 +85,6 @@
 
 /* small phones: from 0 to 480px */
 
-
 @media only screen and (max-width: 480px) {
     .social-links {
         display: none;
@@ -122,13 +124,19 @@
         margin-top: 15px;
         margin-bottom: 15px;
     }
+    form {
+        padding-bottom: 10%;
+    }
+    .blank {
+        padding-top: 20px;
+    }
     .footer {
         position: absolute;
         bottom: 0;
         width: 100%;
         height: 60px;
         background-color: #fff;
-        padding-top: 12px;
+        padding-top: 20px;
         list-style: none;
     }
     .footer ul {
@@ -158,7 +166,6 @@
     section.section-about img {
         display: none;
     }
-    
     .footer p {
         display: none;
     }
