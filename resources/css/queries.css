@@ -70,7 +70,7 @@
         padding-top: 20px;
         font-size: 40px;
     }
-    .text-above {
+    .text-below {
         display: block;
         color: #5f5f5f;
         font-weight: 400;
@@ -130,7 +130,7 @@
         margin-top: 15px;
         margin-bottom: 15px;
     }
-    .text-above {
+    .text-below {
         display: block;
         color: #5f5f5f;
         font-weight: 400;

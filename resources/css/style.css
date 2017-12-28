@@ -222,7 +222,7 @@ nav {
     -ms-transform: translate(-50%, -50%);
 }
 
-.text-above {
+.text-below {
     display: none;
     color: #5f5f5f;
     font-weight: 400;
