@@ -29,6 +29,7 @@
         padding-top: 20px;
         font-size: 40px;
     }
+    
     .section-about h2 {
         font-size: 40px;
     }
@@ -68,6 +69,11 @@
         padding-bottom: 2%;
         padding-top: 20px;
         font-size: 40px;
+    }
+    .text-above {
+        display: block;
+        color: #5f5f5f;
+        font-weight: 400;
     }
     section.section-about {
         font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
@@ -123,6 +129,11 @@
         margin: 0 auto;
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+    .text-above {
+        display: block;
+        color: #5f5f5f;
+        font-weight: 400;
     }
     form {
         padding-bottom: 10%;
