@@ -1,12 +1,8 @@
 /*fun color: #189bc1, rgb(24,155,193)*/
-
-
 /*text-color: #5f5f5f*/
 
 
-/*--------------------*/
 /*---DEFAULT STYLES---*/
-/*--------------------*/
 
 
 /*css rules are ordered by how they appear on page (top to bottom)*/
@@ -39,7 +35,14 @@ html {
 }
 
 
-/*---navbar---*/
+/*--------------------*/
+
+
+/*-------NAVBAR------*/
+
+
+/*--------------------*/
+
 
 nav {
     list-style: none;
@@ -111,7 +114,13 @@ nav {
 }
 
 
-/*header jumbotron*/
+/*--------------------*/
+
+
+/*--HEADER/JUMBOTRON--*/
+
+
+/*--------------------*/
 
 #name {
     text-transform: uppercase;
@@ -146,7 +155,13 @@ nav {
 }
 
 
-/*section projects*/
+/*--------------------*/
+
+
+/*---SECTION PROJECTS--*/
+
+
+/*--------------------*/
 
 .section-projects {
     font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
@@ -162,6 +177,7 @@ nav {
 
 
 /*images and hover effect*/
+
 
 .thumbnail {
     position: relative;
@@ -228,7 +244,14 @@ nav {
 }
 
 
-/*section about*/
+/*--------------------*/
+
+
+/*---SECTION ABOUT---*/
+
+
+/*--------------------*/
+
 
 section.section-about {
     font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
@@ -264,7 +287,7 @@ section.section-about img {
 .build-text a:link,
 .build-text a:visited {
     color: #5f5f5f;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .build-text a:hover,
@@ -275,29 +298,13 @@ section.section-about img {
 }
 
 
-/*
-
-.social-links li a:link,
-.social-links li a:visited {
-    color: #5f5f5f;
-    transition: color 0.5s;
-}
-
-.fa-github a:link,
-.fa-github a:visited {
-    transition: color 0.5s;
-}
-
-.fa-github-alt:hover,
-.fa-linkedin:hover,
-.fa-envelope-open-o:hover {
-    color: #189bc1;
-    transition: color 0.2s;
-
-}*/
+/*--------------------*/
 
 
-/*section contact*/
+/*---SECTION CONTACT---*/
+
+
+/*--------------------*/
 
 section.section-contact {
     font-family: 'Quicksand', 'Raleway', 'Arial', sans-serif;
@@ -369,7 +376,13 @@ input[type="text"] {
 }
 
 
-/*footer*/
+/*--------------------*/
+
+
+/*-------FOOTER-------*/
+
+
+/*--------------------*/
 
 .footer {
     position: absolute;
