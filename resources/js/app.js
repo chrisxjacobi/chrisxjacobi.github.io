@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
-
-    $("#submit-button").click(function (e) {
-        e.preventDefault();
-        $("#greeting-box").html("thanks!");
-        //sendForm();
-    })
+//
+//    $("#submit-button").click(function (e) {
+//        e.preventDefault();
+//        $("#greeting-box").html("thanks!");
+//        //sendForm();
+//    })
 
 //    function sendForm() {
 //        var request = new XMLHttpRequest();
