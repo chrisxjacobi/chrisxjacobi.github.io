@@ -34,10 +34,6 @@ $(document).ready(function () {
             warning += "Email address must be in a valid format. <br>"
         }
 
-        if (subject === "") {
-            warning += "Must supply a subject. <br>"
-        }
-
         if (message === "") {
             warning += "Must supply a message. <br>"
         }
