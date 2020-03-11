@@ -21,7 +21,7 @@ $(document).ready(function () {
 
     // Function validates that input boxes are filled out, whitespace is trimmed, and all (if any) warnings are returned as this function's value for future use
     function validate() {
-        var name = $("#name").val().trim();
+        var name = $("#name-form").val().trim();
         var email = $("#email").val().trim();
         var message = $("#message").val().trim();
         var warning = "";
