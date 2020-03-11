@@ -31,7 +31,7 @@ function main() {
              * it will be sent normally.
              */
             if (mail('chrisxjacobi@gmail.com', $name . $message, $headers)) {
-                $response = 'okay';
+                $response = 'okay'; 
             } else {
                 $response = 'mailerror';
             }
