@@ -21,8 +21,9 @@ function main() {
             /* this forms the correct email headers to send an email */
             $headers = "From: $name\r\n";
             $headers .= "Reply-To: $from\r\n";
-            $headers .= "MEssage: $message\r\n";
+            $headers .= "Message: $message\r\n";
             $headers .= "MIME-Version: 1.0\r\n";
+            $headers .= "Allow: GET, POST";
             $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
 
             /* Now attempt to send the email. This uses a dummy email function
