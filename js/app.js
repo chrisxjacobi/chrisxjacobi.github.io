@@ -34,10 +34,6 @@ $(document).ready(function () {
             warning += "Email address must be in a valid format. <br>"
         }
 
-        if (email !== emailCheck) {
-            warning += "Email addresses must match. <br>";
-        }
-
         if (subject === "") {
             warning += "Must supply a subject. <br>"
         }
