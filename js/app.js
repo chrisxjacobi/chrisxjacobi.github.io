@@ -51,7 +51,7 @@ $(document).ready(function () {
 
     // Function creates a URL string with returnd form data using the jQuery serialize() method. .ajax() performs an HTTP request with the URL string form data, the type of request, and the URL to which the request is sent. If successful, form data is cleared, the developer has response information (for peace of mind!) and the user is informed that the form has been sent. If there is an error, the form is cleared, the developer is informed of error specifics, and an error message is displayed to the user.
     function sendForm() {
-        var myData = $("#member-form").serialize();
+        var myData = $("#send-form").serialize();
 
         $.ajax({
             data: myData,
@@ -59,8 +59,8 @@ $(document).ready(function () {
             url: 'contact.php',
             success: function (responseText) {
                 console.log("response: " + responseText);
-                $("#member-form input[type='text'], input[type='email'], textarea").val("");
-                $("#warning-box").text("Sent!");
+                $("#send-form input[type='text'], input[type='email'], textarea").val("");
+                $("#greeting-box").text("Sent!");
 
                 // Test to ensure correct form data is actually being sent
                 // $("#warning-box").text(myData);
@@ -68,7 +68,7 @@ $(document).ready(function () {
             error: function (request, status) {
                 console.log("status: " + request.status);
                 console.log("response: " + request.responseText);
-                $("#member-form input[type='text'], input[type='email'], textarea").val("");
+                $("#send-form input[type='text'], input[type='email'], textarea").val("");
                 $("#greeting-box").text("Error!");
             },
         });
