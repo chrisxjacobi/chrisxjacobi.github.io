@@ -7,7 +7,7 @@ Purpose: JavaScript file reconfigured for jQuery functionality - will be easier 
 // ready() function necessary to run program
 $(document).ready(function () {
 
-    /
+    //
     $("#submit-button").click(function () {
         var error = validate();
 
