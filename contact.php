@@ -24,7 +24,7 @@ function main() {
             $headers .= "Message: $message\r\n";
             $headers .= "MIME-Version: 1.0\r\n";
             $headers .= "Allow: GET, POST";
-            $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
+            $headers .= "Content-type: text/plain";
 
             /* Now attempt to send the email. This uses a dummy email function
              * because the student email server will not send mail. On a real
