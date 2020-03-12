@@ -1,90 +1,48 @@
 <?php
-if(isset($_POST['email'])) {
- 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "you@yourdomain.com";
-    $email_subject = "Your email subject line";
- 
-    function died($error) {
-        // your error code can go here
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br /><br />";
-        echo $error."<br /><br />";
-        echo "Please go back and fix these errors.<br /><br />";
-        die();
+
+function main() {
+    $response = "error";
+
+    /* This will test to make sure we have a non-empty $_POST array from
+     * the form submission. */
+    if (!empty($_POST)) {
+
+        /* Each of these will strip anything harmful or extraneous out
+         * of the submitted $_POST variables. */
+        $name = substr(strip_tags(trim($_POST['name'])), 0, 64);
+        $message = substr(strip_tags(trim($_POST['message'])), 0, 64);
+        $from = filter_var($_POST['email1'], FILTER_VALIDATE_EMAIL) ? $_POST['email1'] : $from = "";
+
+        /* The cleaning routines above may leave any variable empty. If we
+         * find an empty variable, we stop processing because that means
+         * someone tried to send us something malicious or incorrect. */
+        if (!empty($name) && !empty($from) && !empty($message)) {
+
+            /* this forms the correct email headers to send an email */
+            $headers = "From: $name\r\n";
+            $headers .= "Reply-To: $from\r\n";
+            $headers .= "Message: $message\r\n";
+            $headers .= "MIME-Version: 1.0\r\n";
+            $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
+
+            /* Now attempt to send the email. This uses a dummy email function
+             * because the student email server will not send mail. On a real
+             * server, you would use just "mail" instead of "mymail" and
+             * it will be sent normally.
+             */
+            if (mail('chrisxjacobi@gmail.com', $name . $message, $headers)) {
+                $response = 'okay'; 
+            } else {
+                $response = 'mailerror';
+            }
+        } else {
+            $response = 'varerror';
+        }
+    } else {
+        $response = 'posterror';
     }
- 
- 
-    // validation expected data exists
-    if(!isset($_POST['first_name']) ||
-        !isset($_POST['last_name']) ||
-        !isset($_POST['email']) ||
-        !isset($_POST['telephone']) ||
-        !isset($_POST['comments'])) {
-        died('We are sorry, but there appears to be a problem with the form you submitted.');       
-    }
- 
-     
- 
-    $first_name = $_POST['first_name']; // required
-    $last_name = $_POST['last_name']; // required
-    $email_from = $_POST['email']; // required
-    $telephone = $_POST['telephone']; // not required
-    $comments = $_POST['comments']; // required
- 
-    $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
- 
-  if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
-  }
- 
-    $string_exp = "/^[A-Za-z .'-]+$/";
- 
-  if(!preg_match($string_exp,$first_name)) {
-    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
-  }
- 
-  if(!preg_match($string_exp,$last_name)) {
-    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
-  }
- 
-  if(strlen($comments) < 2) {
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
-  }
- 
-  if(strlen($error_message) > 0) {
-    died($error_message);
-  }
- 
-    $email_message = "Form details below.\n\n";
- 
-     
-    function clean_string($string) {
-      $bad = array("content-type","bcc:","to:","cc:","href");
-      return str_replace($bad,"",$string);
-    }
- 
-     
- 
-    $email_message .= "First Name: ".clean_string($first_name)."\n";
-    $email_message .= "Last Name: ".clean_string($last_name)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Telephone: ".clean_string($telephone)."\n";
-    $email_message .= "Comments: ".clean_string($comments)."\n";
- 
-// create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
-?>
- 
-<!-- include your own success html here -->
- 
-Thank you for contacting us. We will be in touch with you very soon.
- 
-<?php
- 
+    echo $response;
 }
-?>
+
+// this kicks off the script
+main();
