@@ -47,7 +47,7 @@ $(document).ready(function () {
 
         $.ajax({
             data: myData,
-            type: 'GET',
+            type: 'POST',
             url: 'contact.php',
             success: function (responseText) {
                 console.log("response: " + responseText);
