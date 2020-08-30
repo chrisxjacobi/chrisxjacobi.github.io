@@ -268,7 +268,7 @@ section.section-about {
 section.section-about img {
     height: 70%;
     width: 80%;
-    border-radius: 30%;
+    border-radius: 10%;
     ;
     position: relative;
     margin: 0 auto;

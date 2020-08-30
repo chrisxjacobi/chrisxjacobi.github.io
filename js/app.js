@@ -1,12 +1,5 @@
-/*************
-Name: Chris Jacobi
-Coding 05
-Purpose: JavaScript file reconfigured for jQuery functionality - will be easier for programmer to write and for user to read.
-*************/
-
 // ready() function necessary to run program
 $(document).ready(function () {
-
     //
     $("#submit-button").click(function () {
         var error = validate();
@@ -19,7 +12,7 @@ $(document).ready(function () {
         }
     });
 
-    // Function validates that input boxes are filled out, whitespace is trimmed, and all (if any) warnings are returned as this function's value for future use
+    // function validates that input boxes are filled out, whitespace is trimmed, and all (if any) warnings are returned as this function's value for future use
     function validate() {
         var name = $("#name-form").val().trim();
         var email = $("#email").val().trim();
@@ -41,7 +34,7 @@ $(document).ready(function () {
         return warning;
     };
 
-    // Function creates a URL string with returnd form data using the jQuery serialize() method. .ajax() performs an HTTP request with the URL string form data, the type of request, and the URL to which the request is sent. If successful, form data is cleared, the developer has response information (for peace of mind!) and the user is informed that the form has been sent. If there is an error, the form is cleared, the developer is informed of error specifics, and an error message is displayed to the user.
+    // function creates a URL string with returnd form data using the jQuery serialize() method. .ajax() performs an HTTP request with the URL string form data, the type of request, and the URL to which the request is sent. If successful, form data is cleared, and the user is informed that the form has been sent. If there is an error, the form is cleared, the developer is informed of error specifics, and an error message is displayed to the user.
     function sendForm() {
         var myData = $("#send-form").serialize();
 
